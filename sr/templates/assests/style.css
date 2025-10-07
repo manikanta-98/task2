@@ -1,0 +1,64 @@
+/* Global Styles */
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero-section {
+  background: url('../assets/images/hero-bg.png') center/cover no-repeat;
+  position: relative;
+}
+
+.hero-section .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.hero-section .content {
+  z-index: 2;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Card Styling */
+.card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: none;
+  border-radius: 12px;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Buttons */
+.btn-warning {
+  font-weight: bold;
+  border-radius: 30px;
+  padding: 10px 25px;
+  transition: all 0.3s;
+}
+.btn-warning:hover {
+  background-color: #ffc107;
+  color: black;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

@@ -5,13 +5,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
-  "dependencies": {
+  "devDependencies": {
     "browser-sync": "^3.0.4",
     "del": "^8.0.1",
+    "gulp": "^5.0.1",
     "gulp-clean-css": "^4.3.0",
     "gulp-data": "^1.3.1",
     "gulp-if": "^3.0.0",
@@ -20,10 +20,7 @@
     "gulp-plumber": "^1.2.1",
     "gulp-sass": "^6.0.1",
     "gulp-uglify": "^3.0.2",
-    "nunjucks": "^3.2.4",
-    "sass": "^1.93.2"
-  },
-  "devDependencies": {
-    "gulp": "^4.0.2"
+    "sass": "^1.93.2",
+    "through2": "^4.0.2"
   }
 }
